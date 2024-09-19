@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="botones.css">
+    <link rel="stylesheet" type="text/css" href="Ifondo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraja de Pokemon </title>
+    <style>
+        .pokemon-card {
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            width: 120px;
+            height: 150px;
+        }
+        .pokemon-img {
+            width: 100px;
+        }
+        .player-section {
+            margin-bottom: 20px;
+        }
+        .selected {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Baraja de Pokemon</h1>
+
+
+<div class="player-section">
+    <h2>Jugador 1</h2>
+    <div id="pokedex1" class="pokedex-container">
+        
+    </div>
+    <button class="animar-escalar" id="baraja1-button" disabled> Barajar Jugador 1</button>
+</div>
+
+
+<div class="player-section">
+    <h2>Jugador 2</h2>
+    <div id="pokedex2" class="pokedex-container">
+
+    </div>
+    <button class="animar-escalar" id="baraja2-button" disabled>Barajar Jugador 2</button>
+</div>
+
+
+
+<script src="musica.js"></script>
+<script src="baraja1.js"></script>
+<script src="baraja2.js"></script>
+<script src="elegircarta.js"></script>
+<script src="reglas1a.js"></script>
+
+
+
+
+
+
+</body>
+</html>
