@@ -1,67 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="botones.css">
-    <link rel="stylesheet" type="text/css" href="Ifondo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baraja de Pokemon </title>
+    <center>
+    <title>Juego de Cartas Pokémon</title>
+    
     <style>
+        .pokedex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .player-section {
+            flex: 1 1 300px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
         .pokemon-card {
-            display: inline-block;
+            width: 150px;
+            height: 200px;
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 10px;
             margin: 10px;
             text-align: center;
-            width: 120px;
-            height: 150px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
+
+        .pokemon-card.selected {
+            border: 2px solid red;
+        }
+
         .pokemon-img {
             width: 100px;
+            height: 100px;
         }
-        .player-section {
-            margin-bottom: 20px;
+
+        .buttons-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
         }
-        .selected {
-            border: 2px solid red;
+
+        #resultado-comparacion {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .error-message {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-<h1>Baraja de Pokemon</h1>
+    <h1>Juego de Cartas Pokémon</h1>
 
+    <div class="pokedex-container">
+        <div class="player-section">
+            <h2>Jugador 1</h2>
+            <div id="pokedex1" class="pokedex-container"></div>
+            <button id="baraja1-button" disabled>Barajar Jugador 1</button>
+        </div>
 
-<div class="player-section">
-    <h2>Jugador 1</h2>
-    <div id="pokedex1" class="pokedex-container">
-        
+        <div class="player-section">
+            <h2>Jugador 2</h2>
+            <div id="pokedex2" class="pokedex-container"></div>
+            <button id="baraja2-button" disabled>Barajar Jugador 2</button>
+        </div>
     </div>
-    <button class="animar-escalar" id="baraja1-button" disabled> Barajar Jugador 1</button>
-</div>
 
+    <div id="resultado-comparacion"></div>
+    <div id="error-messages" class="error-message"></div>
 
-<div class="player-section">
-    <h2>Jugador 2</h2>
-    <div id="pokedex2" class="pokedex-container">
-
-    </div>
-    <button class="animar-escalar" id="baraja2-button" disabled>Barajar Jugador 2</button>
-</div>
-
-
-
-<script src="musica.js"></script>
-<script src="baraja1.js"></script>
-<script src="baraja2.js"></script>
-<script src="elegircarta.js"></script>
-<script src="reglas1a.js"></script>
-
-
-
-
-
-
+    
+    <script src="reglas2b.js"></script>
+    <script src="baraja1.js"></script>
+    <script src="baraja2.js"></script>
+    <script src="comparar.js"></script>
 </body>
 </html>
