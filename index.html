@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <center>
-    <title>Juego de Cartas Pokémon</title>
-    
+        <link rel="stylesheet" href="botones.css">
+    <link rel="stylesheet" href="texto.css">
+    <title >Juego de Cartas Pokémon</title>
+    <link rel="stylesheet" href="FondoImg.css">
     <style>
         .pokedex-container {
             display: flex;
@@ -70,25 +73,28 @@
 </head>
 <body>
 
-    <h1>Juego de Cartas Pokémon</h1>
+    <h1 class="animar-color">Juego de Cartas Pokémon</h1>
 
     <div class="pokedex-container">
         <div class="player-section">
-            <h2>Jugador 1</h2>
+            <h2 class="brillo-hover">Jugador 1</h2>
             <div id="pokedex1" class="pokedex-container"></div>
-            <button id="baraja1-button" disabled>Barajar Jugador 1</button>
+            <button class="boton" id="baraja1-button" disabled>Barajar Jugador 1</button>
         </div>
 
         <div class="player-section">
-            <h2>Jugador 2</h2>
+            <h2 class="brillo-hover">Jugador 2</h2>
             <div id="pokedex2" class="pokedex-container"></div>
-            <button id="baraja2-button" disabled>Barajar Jugador 2</button>
+            <button class="boton" id="baraja2-button" disabled>Barajar Jugador 2</button>
         </div>
     </div>
 
-    <div id="resultado-comparacion"></div>
+    <div class="animar-color" id="resultado-comparacion"></div>
     <div id="error-messages" class="error-message"></div>
 
+    <audio class="boton_se" controls autoplay>
+        <source src="pokemonN.mp3" type="audio/mpeg">
+    </audio>
     
     <script src="reglas2b.js"></script>
     <script src="baraja1.js"></script>

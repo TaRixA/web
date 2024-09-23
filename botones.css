@@ -1,25 +1,19 @@
-body {
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    margin: 20px;
-}
-
-div {
-    margin: 20px auto;
-    padding: 20px;
-    width: 200px;
+.boton {
+    background-color: #28880bd0;
     color: white;
-    border-radius: 8px;
-}
-
-
-@keyframes ejemploEscalar {
-    from { transform: scale(1); }
-    to { transform: scale(1.2); }
-}
-
-.animar-escalar {
-    background-color: rgb(112, 235, 112);
-    animation: ejemploEscalar 1s infinite alternate;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
     cursor:pointer;
+}
+
+.boton_se {
+    background-color: transparent;
+    border: 4px solid #0bcf95;
+    color:  #28880bd0;
+    cursor: pointer;
 }

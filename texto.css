@@ -1,0 +1,69 @@
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+
+
+@keyframes cambioColor {
+    0% { color: rgb(160, 135, 135); }
+    50% { color: blue; }
+    100% { color: rgb(0, 255, 13); }
+}
+
+.animar-color {
+    font-size: 24px;
+    animation: cambioColor 3s infinite alternate;
+}
+
+
+
+
+@keyframes maquinaEscribir {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.texto-maquina {
+    font-size: 24px;
+    border-right: 2px solid rgb(9, 240, 39);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; 
+    animation: maquinaEscribir 5s steps(40, end) 3s forwards;
+    display: inline-block;
+}
+
+
+.texto-maquina:before {
+    content: '';
+}
+
+
+
+
+.sombra-texto {
+    font-size: 24px;
+    color: #000;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.brillo-hover {
+    font-size: 24px;
+    color: #387bc3;
+    transition: filter 1s;
+}
+.brillo-hover:hover {
+    filter: brightness(200%);
+}
+
+
+
+

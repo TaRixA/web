@@ -102,3 +102,11 @@ function mostrarError(mensaje) {
     const errorDiv = document.getElementById('error-messages');
     errorDiv.textContent = mensaje;
 }
+
+
+function getTipo(type) {
+    const tipoValues = {
+
+    };
+    return tipoValues=[type];
+}
